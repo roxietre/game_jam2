@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 6f;
+
     public Rigidbody2D rb;
-    Vector2 movement;
-    Vector3 mousePos;
     public Camera PlayerCam;
+
+    Vector2 movement;
+    Vector2 mousePos;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         mousePos = PlayerCam.ScreenToWorldPoint(Input.mousePosition);
+    
     }
 
     void FixedUpdate()
@@ -31,5 +34,7 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
 
         Vector2 lookDir = mousePos - rb.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f; 
+        rb.rotation = angle;
     }
 }
