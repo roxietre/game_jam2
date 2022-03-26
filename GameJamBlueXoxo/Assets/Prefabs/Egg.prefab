@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3841572754401499466}
   - component: {fileID: 3841572754401499469}
   - component: {fileID: 3841572754401499468}
+  - component: {fileID: 2089173445}
   m_Layer: 0
   m_Name: Egg
   m_TagString: Untagged
@@ -96,7 +97,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  spawnRate: 1
-  spawnTimer: 0
+  spawnRate: 2
   normalSpider: {fileID: 5411052267241277676, guid: adc940c75d0eaf44da33cb9dcad1bdb8, type: 3}
   eSpider: {fileID: 2607090886058066796, guid: b1728b78ea2bdef489c0df9d45b25047, type: 3}
+--- !u!61 &2089173445
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3841572754401499471}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.13078785, y: -0.00000047683716}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 20.484375, y: 22.08}
+    newSize: {x: 20.484375, y: 22.08}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.7902393, y: 5.6011553}
+  m_EdgeRadius: 0
