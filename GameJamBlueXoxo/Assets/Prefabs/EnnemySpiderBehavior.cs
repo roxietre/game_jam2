@@ -7,10 +7,16 @@ public class EnnemySpiderBehavior : MonoBehaviour
     public int health = 100;
     public int maxHealth = 100;
     public int damage = 10;
-    public Rigidbody2D rb;
-    public Transform player;
+    private Rigidbody2D rb;
+    private Transform player;
     private Vector2 movement;
     public float speed = 6f;
+
+    private void Start() 
+    {
+        rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;    
+    }
 
     // Update is called once per frame
     void Update()
