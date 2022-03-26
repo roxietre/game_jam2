@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Spawn
   - FireRatePowerUp
+  - Rooms
+  - SpawnPoint
+  - ExplosiveMine
   - HealthPowerUp
   layers:
   - Default
@@ -14,7 +18,7 @@ TagManager:
   - Water
   - UI
   - Terrain
-  - 
+  - Map
   - 
   - 
   - 
@@ -44,11 +48,8 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Terrain
-    uniqueID: 929253063
-    locked: 0
-  - name: PowerUps
-    uniqueID: 2069536107
+    uniqueID: 1517267835
     locked: 0
   - name: Player
-    uniqueID: 3467189479
+    uniqueID: 3509598115
     locked: 0
