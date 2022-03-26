@@ -11,11 +11,17 @@ public class PlayerHealth : MonoBehaviour
     public bool isInvincible = false;
     public bool isDead = false;
     public int currentHealth = 100;
+    public HealthBarScript healthBar;
+
+    void Start()
+    {
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentHealth <= 0)
+        if (health <= 0)
         {
             isDead = true;
         }
@@ -28,6 +34,8 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        
+        healthBar.SetHealth(health);
         if (health <= 0)
         {
             health = 0;
