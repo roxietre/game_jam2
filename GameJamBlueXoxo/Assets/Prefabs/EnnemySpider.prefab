@@ -144,9 +144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5124bf4655916d439c318f5b9890b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
+  health: 50
+  maxHealth: 50
   damage: 10
-  rb: {fileID: 5411052267241277682}
-  player: {fileID: 0}
-  speed: 1
+  speed: 2
+  healthPowerUp: {fileID: 5491554689051717307, guid: b1759dac437dd1c4b97d7d98f9944f2a, type: 3}
+  healPowerUp: {fileID: 8410965636099394662, guid: 7896502936da76d40bda07e992b9d217, type: 3}
+  explosiveMine: {fileID: 4744422893257325989, guid: 3fbfde300e25fdf40bccd08baf27dc41, type: 3}
+  attackSpeedPowerUp: {fileID: 8468843043828687211, guid: a34b304b81ca1524e86c282acc52db0e, type: 3}

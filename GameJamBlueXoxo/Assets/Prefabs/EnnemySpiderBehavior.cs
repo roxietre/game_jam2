@@ -11,6 +11,11 @@ public class EnnemySpiderBehavior : MonoBehaviour
     private Transform player;
     private Vector2 movement;
     public float speed = 6f;
+    private int chance;
+    public GameObject healthPowerUp;
+    public GameObject healPowerUp;
+    public GameObject explosiveMine;
+    public GameObject attackSpeedPowerUp;
 
     private void Start() 
     {
@@ -27,6 +32,19 @@ public class EnnemySpiderBehavior : MonoBehaviour
     {
         if (health <= 0)
         {
+            chance = Random.Range(0, 100);
+            if (chance == 7) {
+                Instantiate(healthPowerUp, transform.position, Quaternion.identity);
+            }
+            if (chance == 8) {
+                Instantiate(healPowerUp, transform.position, Quaternion.identity);
+            }
+            if (chance == 9) {
+                Instantiate(explosiveMine, transform.position, Quaternion.identity);
+            }
+            if (chance == 10) {
+                Instantiate(attackSpeedPowerUp, transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
         Vector3 direction = player.position - transform.position;
