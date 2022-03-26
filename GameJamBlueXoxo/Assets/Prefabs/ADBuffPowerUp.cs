@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaxHealthPowerUp : MonoBehaviour
+public class ADBuffPowerUp : MonoBehaviour
 {
+    public int buff = 10;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            PlayerHealth ph = other.GetComponent<PlayerHealth>();
-            ph.maxHealth += 10;
-            ph.health += 10;
+            BulletScript bs = other.GetComponent<BulletScript>();
+            bs.damage += buff;
             Destroy(gameObject);
         }
     }
