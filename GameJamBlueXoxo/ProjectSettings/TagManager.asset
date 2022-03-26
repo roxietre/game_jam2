@@ -10,6 +10,9 @@ TagManager:
   - SpawnPoint
   - ExplosiveMine
   - HealthPowerUp
+  - ExplosiveMine
+  - Spawn
+  - Bullet
   layers:
   - Default
   - TransparentFX
