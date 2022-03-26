@@ -44,7 +44,8 @@ GameObject:
   - component: {fileID: 6490507956892496792}
   - component: {fileID: 4154795691131926414}
   - component: {fileID: 2032159205}
-  m_Layer: 0
+  - component: {fileID: 3331066110489407651}
+  m_Layer: 3
   m_Name: PlayerPrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -103,8 +104,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 302334633
-  m_SortingLayer: 2
+  m_SortingLayerID: -827777817
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 169821fc94fc5304d82b429d2dd57014, type: 3}
   m_Color: {r: 0, g: 0.59395885, b: 1, a: 1}
@@ -137,7 +138,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6490507956892496792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,3 +196,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4486955, y: 1.2171736}
   m_EdgeRadius: 0
+--- !u!114 &3331066110489407651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466468371554413094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2efc1275bf92bc04299b5661a2af743a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  invincibilityTime: 1
+  invincibilityTimer: 0
+  isInvincible: 0
+  isDead: 0
+  currentHealth: 80
