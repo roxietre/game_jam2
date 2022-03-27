@@ -17,7 +17,7 @@ public class egg_spawn : MonoBehaviour
         if (number_of_egg == 0)
         {
             Vector3 position = new Vector3(Random.Range(transform.position.x - 5 , transform.position.x +5 ), Random.Range(transform.position.y -5 , transform.position.y +5), 0);
-            Instantiate(object_egg, position, Quaternion.identity);
+            Instantiate(PowerUp, position, Quaternion.identity);
         }
 
         for (int i = 0; i < number_of_egg; i++)
