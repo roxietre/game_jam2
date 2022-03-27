@@ -5,7 +5,7 @@ using UnityEngine;
 public class Destroyer : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag != "Player") {
+		if (other.tag != "Player" && other.tag != "Bullet" && other.tag != "Enemy") {
 			Destroy (other.gameObject);
 		}
 	}
