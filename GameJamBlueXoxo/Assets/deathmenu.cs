@@ -7,14 +7,15 @@ public class deathmenu : MonoBehaviour
 {
     public GameObject deathMenuUI;
     public GameObject player;
+    public GameObject boss;
     void Update()
     {
-        if (!player)
+        if (!player || !boss)
         {
             deathMenuUI.SetActive(true);
             Time.timeScale = 0f;
         }
-        else if (player)
+        else if (player || boss)
         {
             deathMenuUI.SetActive(false);
             Time.timeScale = 1f;
