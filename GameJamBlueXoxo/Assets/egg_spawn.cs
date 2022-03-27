@@ -12,8 +12,6 @@ public class egg_spawn : MonoBehaviour
     public void Start()
     {
         number_of_egg = Random.Range(0, 3);
-        //debug print map name and number of egg c
-        Debug.Log("map name: " + Application.loadedLevelName);
 
         for (int i = 0; i < number_of_egg; i++)
         {

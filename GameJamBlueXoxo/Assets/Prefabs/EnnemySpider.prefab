@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5124bf4655916d439c318f5b9890b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
+  health: 50
+  maxHealth: 50
   damage: 10
   speed: 3
   healthPowerUp: {fileID: 8410965636099394662, guid: 7896502936da76d40bda07e992b9d217, type: 3}

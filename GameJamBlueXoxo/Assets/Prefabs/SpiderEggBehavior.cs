@@ -9,21 +9,29 @@ public class SpiderEggBehavior : MonoBehaviour
     private float spawnTimer = 0f;
     public GameObject normalSpider;
     public GameObject eSpider;
+    private Transform player;
+    public bool inRange;
+
+    private void Start() {
+        player = GameObject.FindGameObjectWithTag("Player").transform;  
+    }
 
     void Update()
     {
         spawnTimer += Time.deltaTime;
-        if (spawnTimer >= spawnRate)
-        {
-            spawnTimer = 0f;
-            int randomSpider = Random.Range(0, 2);
-            if (randomSpider == 0)
+        if (inRange) {
+            if (spawnTimer >= spawnRate)
             {
-                Instantiate(normalSpider, transform.position, Quaternion.identity);
-            }
-            else
-            {
-                Instantiate(eSpider, transform.position, Quaternion.identity);
+                spawnTimer = 0f;
+                int randomSpider = Random.Range(0, 2);
+                if (randomSpider == 0)
+                {
+                    Instantiate(normalSpider, transform.position, Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(eSpider, transform.position, Quaternion.identity);
+                }
             }
         }
 
@@ -31,7 +39,7 @@ public class SpiderEggBehavior : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }   
+    }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -41,5 +49,4 @@ public class SpiderEggBehavior : MonoBehaviour
             health -= bs.damage;
         }    
     }
-
 }
