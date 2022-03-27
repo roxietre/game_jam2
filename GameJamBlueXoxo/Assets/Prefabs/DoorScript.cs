@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     [SerializeField] Transform posToGo;
-
+	private GameObject[] enemy;
     bool playerDetected;
     GameObject playerGO;
 
@@ -20,6 +20,10 @@ public class DoorScript : MonoBehaviour
     {
         if (playerDetected)
         {
+			enemy = GameObject.FindGameObjectsWithTag("Enemy");
+			foreach (GameObject obj in enemy) {
+				Destroy(obj);
+			}
             playerGO.transform.position = posToGo.position;
             playerDetected = false;
         }
