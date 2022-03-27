@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  spawnRate: 4
+  spawnRate: 3
   normalSpider: {fileID: 5411052267241277676, guid: adc940c75d0eaf44da33cb9dcad1bdb8, type: 3}
   eSpider: {fileID: 2607090886058066796, guid: b1728b78ea2bdef489c0df9d45b25047, type: 3}
   inRange: 0

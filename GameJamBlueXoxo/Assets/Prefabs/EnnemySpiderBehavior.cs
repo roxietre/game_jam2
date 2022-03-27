@@ -38,7 +38,7 @@ public class EnnemySpiderBehavior : MonoBehaviour
     {
         if (health <= 0)
         {
-            chance = Random.Range(0, 100);
+            chance = Random.Range(0, 30);
             if (chance == 7) {
                 Instantiate(healthPowerUp, transform.position, Quaternion.identity);
             }
