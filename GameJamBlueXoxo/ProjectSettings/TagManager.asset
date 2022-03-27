@@ -13,6 +13,7 @@ TagManager:
   - ExplosiveMine
   - Spawn
   - Bullet
+  - Chambers
   layers:
   - Default
   - TransparentFX

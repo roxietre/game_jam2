@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChambersTemplate : MonoBehaviour
+public class ChamberTemplates : MonoBehaviour
 {
     // Start is called before the first frame update
 	public GameObject[] bottomChambers;
@@ -10,9 +10,5 @@ public class ChambersTemplate : MonoBehaviour
 	public GameObject[] leftChambers;
 	public GameObject[] rightChambers;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public List<GameObject> chambers;
 }
