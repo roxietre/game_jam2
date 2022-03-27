@@ -917,6 +917,10 @@ PrefabInstance:
       value: Chamber Template
       objectReference: {fileID: 0}
     - target: {fileID: 8116457445678450174, guid: bf0f78791d20a0148ad72696894cac50, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 5389213744418347771, guid: 8e6a1a07f59e36d4faf4c4cb01ea6c2b, type: 3}
+    - target: {fileID: 8116457445678450174, guid: bf0f78791d20a0148ad72696894cac50, type: 3}
       propertyPath: waitTime
       value: 4
       objectReference: {fileID: 0}
