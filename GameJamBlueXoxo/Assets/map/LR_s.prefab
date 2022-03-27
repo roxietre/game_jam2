@@ -5316,6 +5316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PowerUp: {fileID: 5491554689051717307, guid: b1759dac437dd1c4b97d7d98f9944f2a, type: 3}
+  PowerrUp: {fileID: 8468843043828687211, guid: a34b304b81ca1524e86c282acc52db0e, type: 3}
   object_egg: {fileID: 3841572754401499471, guid: f6c83ca2aad0fc24fb1e5a2f702b901a, type: 3}
 --- !u!114 &3925509593129200691
 MonoBehaviour:
