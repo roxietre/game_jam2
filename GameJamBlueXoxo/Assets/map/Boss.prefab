@@ -5340,6 +5340,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5389213744418347769}
     m_Modifications:
+    - target: {fileID: 3255520087970813401, guid: 6c7f9a8d6e66cd94ca5de0aeababaabc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255520089157061664, guid: 6c7f9a8d6e66cd94ca5de0aeababaabc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3255520089865397233, guid: 6c7f9a8d6e66cd94ca5de0aeababaabc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5387,6 +5395,18 @@ PrefabInstance:
     - target: {fileID: 3255520089865397234, guid: 6c7f9a8d6e66cd94ca5de0aeababaabc, type: 3}
       propertyPath: m_Name
       value: Boss1Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255520089994242721, guid: 6c7f9a8d6e66cd94ca5de0aeababaabc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255520089994242727, guid: 6c7f9a8d6e66cd94ca5de0aeababaabc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255520089994242727, guid: 6c7f9a8d6e66cd94ca5de0aeababaabc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1517267835
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7f9a8d6e66cd94ca5de0aeababaabc, type: 3}

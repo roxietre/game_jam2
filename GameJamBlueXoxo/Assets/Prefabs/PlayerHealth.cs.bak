@@ -29,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
         {
             Destroy(gameObject);
         }
-		TakeDamage(0);
     }
 
     public void TakeDamage(int damage)
