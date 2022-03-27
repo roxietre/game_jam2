@@ -39,4 +39,9 @@ public class Boss1Behavior : MonoBehaviour
             health -= bs.damage;
         }
     }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+    }
 }
