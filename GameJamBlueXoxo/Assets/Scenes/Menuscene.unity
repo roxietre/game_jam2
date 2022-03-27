@@ -353,6 +353,10 @@ PrefabInstance:
       propertyPath: mapToLoad
       value: map
       objectReference: {fileID: 0}
+    - target: {fileID: 5375799745534997941, guid: 093bd56423ad37d4e8ea7e597bef9965, type: 3}
+      propertyPath: levelToLoad
+      value: MainScene
+      objectReference: {fileID: 0}
     - target: {fileID: 5375799745534997942, guid: 093bd56423ad37d4e8ea7e597bef9965, type: 3}
       propertyPath: m_Pivot.x
       value: 0

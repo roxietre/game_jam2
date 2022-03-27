@@ -48,6 +48,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: hitbox
+    uniqueID: 2878371127
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
