@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public bool isDead = false;
     public int currentHealth = 100;
     public HealthBarScript healthBar;
+	public AudioSource aie;
 
     void Start()
     {
@@ -36,6 +37,8 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
         
+		if (damage != 0)
+			aie.Play();
         healthBar.SetHealth(health);
         if (health <= 0)
         {
