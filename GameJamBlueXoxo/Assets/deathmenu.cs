@@ -8,6 +8,7 @@ public class deathmenu : MonoBehaviour
     public GameObject deathMenuUI;
     public GameObject player;
     public GameObject boss;
+	private PlayerHealth pl;
     void Update()
     {
         if (!player)
@@ -16,6 +17,16 @@ public class deathmenu : MonoBehaviour
             Time.timeScale = 0f;
         }
         else if (player)
+        {
+            deathMenuUI.SetActive(false);
+            Time.timeScale = 1f;
+        }
+        if (pl.isDead)
+        {
+            deathMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else if (!pl.isDead)
         {
             deathMenuUI.SetActive(false);
             Time.timeScale = 1f;

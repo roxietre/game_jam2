@@ -8,6 +8,7 @@ public class deathmenu : MonoBehaviour
     public GameObject deathMenuUI;
     public GameObject player;
     public GameObject boss;
+	private PlayerHealth pl;
     void Update()
     {
         if (!player)
